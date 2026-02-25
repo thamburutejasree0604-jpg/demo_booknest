@@ -1,0 +1,10 @@
+0: Uncategorized
+1: Fiction
+2: Mystery
+3: Romance
+4: Science Fiction
+5: Fantasy
+6: Historical Fiction
+7: Thriller
+8: Non-Fiction
+9: Biography
