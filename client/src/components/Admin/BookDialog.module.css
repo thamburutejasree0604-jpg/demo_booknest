@@ -1,0 +1,128 @@
+.dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 80%;
+  max-width: 800px;
+  max-height: 90%;
+  display: flex;
+  border-radius: 12px;
+  box-sizing: border-box;
+  padding: 1.5rem;
+}
+
+.coverContainer {
+  flex: 1;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+  text-align: center;
+}
+
+.noCoverMessage {
+  font-size: 1rem;
+  color: #888;
+}
+
+.coverPreview {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.dialogContent {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 1rem;
+  padding-top: 1rem;
+}
+
+.form {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.formRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.formLabel {
+  flex: 1;
+  font-weight: bold;
+}
+
+.formInput {
+  flex: 2;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #d1bfa4;
+  border-radius: 6px; /* Rounded corners */
+  background: #fff;
+  box-sizing: border-box;
+}
+
+textarea.formInput {
+  height: 100px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.submitButton,
+.cancelButton {
+  padding: 0.5rem 1rem;
+  border-radius: 6px; 
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submitButton {
+  background-color: #8e735b;
+  color: #fff;
+}
+
+.submitButton:hover {
+  background-color: #6d5b4f;
+  transform: scale(1.05);
+}
+
+.cancelButton {
+  background-color: #ddd;
+}
+
+.cancelButton:hover {
+  background-color: #ccc;
+}
+
+.closeButton {
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #888;
+}
+
+.closeButton:hover {
+  color: #6d5b4f;
+}

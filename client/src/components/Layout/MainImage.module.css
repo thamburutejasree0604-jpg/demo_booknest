@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+.mainImage {
+  position: relative;
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+  margin-top: 1.25rem; /* Adds some space between the header and the image */
+  height: 25rem;
+}
+
+.libraryImage {
+  width: 100%; /* Makes the image responsive */
+  max-width: 75rem; /* Optional: Limits the maximum width of the image */
+  height: auto;
+  filter: blur(1px); /* Apply blur effect */
+}
+
+.textOverlay {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Text color */
+  font-size: 3em; /* Adjust as needed */
+  text-align: center;
+  font-weight: 800;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7); /* Add text shadow */
+}
+
+.searchContainer {
+  padding: 3%;
+  position: absolute;
+  top: 60%; /* Position the search container below the overlay text */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchInput {
+  padding: 0.65rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-right: none; /* Remove the right border to align with the button */
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  height: 2.5rem;
+  box-sizing: border-box;
+  padding-right: 2rem;
+}
+
+.searchInput::placeholder {
+  font-family: "Montserrat", sans-serif;
+  
+}
+
+.searchButton {
+  padding: 0.65rem 1.25rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-left: none; /* Remove the left border to align with the input */
+  border-radius: 0 4px 4px 0;
+  background-color: #e35332;
+  color: #fbf9f9;
+  cursor: pointer;
+  height: 2.5rem;
+  outline: none;
+  box-sizing: border-box;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+}
+
+.searchButton:hover {
+  background-color: #bb5c40;
+}
+
+@media (max-width: 768px) {
+  .searchContainer {
+    padding: 3%;
+    position: absolute;
+    top: 70%; /* Position the search container below the overlay text */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

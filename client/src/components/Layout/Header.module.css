@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between; /* Space between logo and header-right section */
+  align-items: center;
+  padding: 0.65rem 1.25rem; 
+  background-color: #a28d7f; 
+  color: #fff; 
+}
+
+.logo {
+  width: 250px; 
+  height: auto;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-icon {
+  font-size: 2rem; /* Base size */
+  margin-right: 1rem; 
+  cursor: pointer; 
+  transition: transform 0.3s ease; /* Smooth transition effect */
+}
+.header-icon:hover {
+  transform: scale(1.2); /* Increase the size by 20% */
+}
+
+.header-right > * {
+  margin-left: 1rem; /* Space between the user icon and the cart button */
+}

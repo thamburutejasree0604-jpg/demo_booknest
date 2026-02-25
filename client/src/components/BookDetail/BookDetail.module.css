@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap");
+
+.bookDetail {
+  display: flex;
+  flex-direction: column; /* Column direction for small screens */
+  justify-content: center;
+  align-items: center;
+  width: 70%; /* Adjusted width for responsiveness */
+  max-width: 1200px; /* Limit the maximum width */
+  padding: 2.5rem;
+  margin: 2rem auto;
+  background: linear-gradient(to right, #e2d7bc, #d4ccbe, #bdb19e);
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0.2, 0.2, 0.2, 0.2);
+  transition: transform 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+  color: #060606;
+  font-weight: 500;
+}
+
+.bookDetail:hover {
+  transform: scale(1.02);
+}
+
+.bookCoverDetail {
+  width: 80%;
+  max-width: 23rem;
+  margin: 0 auto 2.5rem auto; /* Centered and spaced */
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.bookCoverDetail:hover {
+  transform: scale(1.05);
+}
+
+.bookInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: right; /* Centered items */
+  width: 100%; /* Full width for smaller screens */
+  max-width: 37.5rem;
+}
+
+.bookInfo h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem; /* Adjusted font size for better scaling */
+  margin: 0 0 10px 0;
+  color: #040404; /* Dark color for the text */
+  text-shadow: 2px 2px 4px #814545; /* Subtle shadow effect */
+}
+
+.bookInfo p {
+  font-size: 1.2em;
+  margin: 0.8rem 0;
+}
+
+.bookInfo button {
+  background-color: #352a0e;
+  color: rgb(240, 234, 234);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 1.25rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.bookInfo button:hover {
+  background-color: #9d412d;
+  transform: scale(1.05);
+}
+
+.bookInfo button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.bookInfo strong {
+  color: #080808;
+  font-weight: bold;
+}
+
+.tagsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.genreTag,
+.stockTag {
+  background-color: rgba(240, 240, 240, 0.61);
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.genreTag {
+  color: #814545;
+}
+.stockTag {
+  color: #d9534f;
+}
+
+button.add-to-cart-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Media Queries for responsiveness */
+@media (min-width: 768px) {
+  .bookDetail {
+    flex-direction: row; /* Row direction for larger screens */
+  }
+
+  .bookCoverDetail {
+    margin: 0 2.5rem 0 0; /* Adjust margin for side-by-side layout */
+    width: auto; /* Auto width */
+  }
+
+  .bookInfo {
+    align-items: flex-start; /* Align items to start for larger screens */
+    text-align: left; /* Left align text */
+  }
+}

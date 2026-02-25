@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+.bookList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2.5rem;
+  background: #f4f4f9;
+}
+
+.bookItem {
+  padding: 1.25rem;
+  width: 10rem;
+  margin: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.bookItem:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.bookCover {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.bookCover:hover {
+  transform: scale(1.1);
+}
+
+.bookDetails {
+  margin-top: 0.65rem;
+}
+
+.bookTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #333;
+}
+
+.bookAuthor,
+.bookPrice {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  color: #777;
+  margin: 5px 0;
+}
